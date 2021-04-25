@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css" />
+    <title>Tailwind - KEA Restaurant</title>
+  </head>
+  <body>
+    <header id="kea-rest-header">
+      <!-- Menu title-->
+      <div class="title flex items-start flex-shrink-0 text-white">
+        <span class="font-semibold text-xl m-3.5"
+          >Restaurant KEA</span
+        >
+      </div>
+      <nav class="menu px-6 md:px-4">
+        <div class="w-full block lg:w-auto">
+          <div class="text-sm md:flex lg:flex-grow">
+            <a
+              href="./home.html"
+              class="block py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-600 text-center font-bold md:mr-3"
+            >
+              Home
+            </a>
+            <a
+              href="./menu.html"
+              class="block py-2 text-center font-bold border-t-2 border-b-2 md:border-t-0 md:border-b-0 md:mr-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-600"
+            >
+              Menu
+            </a>
+            <a
+              href="#contact"
+              class="block py-2 md:mr-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-600 text-center font-bold"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      id="contact"
+      class="mt-4 mb-9 mx-4 space-y-3 flex flex-wrap justify-center lg:grid lg:grid-cols-2 lg:gap-5"
+    >
+      <div class="col space-y-2 lg:order-2">
+        <img class="w-full" src="/assets/map.jpg" alt="restaurant location" />
+        <p>Lygten 37 <br />2400 Copenhagen</p>
+        <p class="">
+          Phone no.: <strong><a href="tel: 20 82 53 70">20 82 53 70</a></strong>
+        </p>
+      </div>
+      <form
+        method="POST"
+        action="form.php"
+        class="space-y-4 w-max my-5 p-3 shadow-lg rounded-xl p-6 md:w-full lg:order-1"
+      >
+        <h2 class="font-bold">Contact form</h2>
+        <label for="full-name" class="flex flex-col flex-wrap"
+          >Full name
+          <input
+            id="full-name"
+            class="shadow"
+            name="full-name"
+            type="text"
+            size="10"
+            pattern="^[A-Za-z-]+$"
+          />
+        </label>
+        <label for="phone-num" class="flex flex-col flex-wrap"
+          >Phone number
+          <input
+            id="phone-num"
+            class="shadow"
+            name="phone-num"
+            type="text"
+            size="25"
+          />
+        </label>
+
+      
+          <label for="email" class="flex flex-col flex-wrap">Email 
+          <input
+            id="email"
+            class="shadow"
+            name="email"
+            type="email"
+            size="25"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          </label>
+        <fieldset class="grid grid-cols-2 gap-3">
+          <label for="persons" class="flex flex-col flex-wrap">
+            Persons
+            <input
+              id="persons"
+              class="shadow"
+              name="persons"
+              type="number"
+              maxlength="3"
+              size="5"
+              min="1"
+              max="20"
+              pattern="^[1-9][0-9]?$|^20$"
+            />
+          </label>
+ 
+            <label for="date-time" class="flex flex-col flex-wrap"> Date and time 
+            <input
+              id="date-time"
+              class="shadow"
+              name="date-time"
+              type="datetime-local"
+              size="25"
+              cols="33"
+            />
+            </label>
+</label>
+        </fieldset>
+    
+          <label for="info" class="flex flex-col flex-wrap"> Further information 
+          <textarea
+            id="info"
+            class="shadow"
+            name="info"
+            rows="5"
+            cols="25"
+          ></textarea>
+          </label>
+
+        <button
+          type="submit"
+          class="btn rounded text-white font-semibold p-2 w-full rounded"
+        >
+          Send
+        </button>
+      </form>
+    </section>
+    <footer
+      id="footer"
+      class="fixed w-full bottom-0 text-center text-white p-2"
+    >
+      <small>&#169; 2021 KEA Web Development</small>
+    </footer>
+  </body>
+</html>

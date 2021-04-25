@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("output.css");
+@import url("kea-rest.css");
+@import url("will-sh.css");

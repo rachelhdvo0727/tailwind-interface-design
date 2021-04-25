@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css" />
+    <title>Tailwind - KEA Restaurant</title>
+  </head>
+  <body>
+    <header id="kea-rest-header">
+      <!-- Menu title-->
+      <div class="title flex items-start flex-shrink-0 text-white">
+        <span class="font-semibold text-xl m-3.5">Restaurant KEA</span>
+      </div>
+      <nav class="menu px-6 md:px-4">
+        <div class="w-full block lg:w-auto">
+          <div class="text-sm md:flex lg:flex-grow">
+            <a
+              href="#home"
+              class="block py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-600 text-center font-bold md:mr-3"
+            >
+              Home
+            </a>
+            <a
+              href="./menu.html"
+              class="block py-2 text-center font-bold border-t-2 border-b-2 md:border-t-0 md:border-b-0 md:mr-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-600"
+            >
+              Menu
+            </a>
+            <a
+              href="./contact.html"
+              class="block py-2 md:mr-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-600 text-center font-bold"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="mt-4 mb-20 mx-4 text-justify">
+      <div
+        class="flex flex-col flex-wrap space-y-3 lg:grid lg:gap-x-3 lg:grid-cols-3"
+      >
+        <img
+          class="w-full lg:col-start-3 lg:col-end-4"
+          src="/assets/kea_restaurant.jpg"
+          alt="KEA restaurant"
+        />
+
+        <p
+          class="lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-start-1 lg:row-end-2"
+        >
+          We provide a wide variety of fine dishes and beverages at moderate
+          prices. Located in one of the trendiest areas of Copenhagen,
+          Restaurant KEA has been at the forefront of Denmark's culinary life
+          for the past decade. Let us take you on a journey of taste that you
+          will never forget. You will not only not regret it, but you will feel
+          an urge to spread the good news around to your friends and family. So
+          amazing is the food experience at Restaurant KEA. We look forward to
+          serving you.
+        </p>
+        <ul
+          class="text-yellow-600 font-semibold ml-4 lg:col-start-1 lg:row-start-2"
+        >
+          <li>High quality food</li>
+          <li>Excellent location</li>
+          <li>Attentive personnel</li>
+          <li>Wonderful music</li>
+          <li>Amazing wines</li>
+          <li>Reasonable prices</li>
+        </ul>
+
+        <article
+          id="quote"
+          class="bg-gray-200 p-3 mt-4 w-5/6 self-end lg:col-start-1 lg:col-end-4 lg:row-start-3 lg:row-end-3 lg:place-self-end"
+        >
+          <blockquote>
+            <p>
+              Dining at Restaurant KEA has truly been one of the greatest
+              experiences of my life. Words cannot express the pleasure that I
+              felt while tasting these amazing flavours. It makes all other
+              restaurants pale in comparison, in Denmark and elsewhere.
+            </p>
+            <cite class="pl-4"
+              >- Mette J. Christensen, <em>The Food Connoisseur</em></cite
+            >
+          </blockquote>
+        </article>
+      </div>
+    </section>
+
+    <footer
+      id="footer"
+      class="fixed w-full bottom-0 text-center text-white p-2"
+    >
+      <small>&#169; 2021 KEA Web Development</small>
+    </footer>
+  </body>
+</html>

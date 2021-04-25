@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #e9424f;
+  --secondary-color: #263549;
+  --accent-color: #e9c588;
+  --sans-serif: Arial, Helvetica, sans-serif;
+  --serif: Georgia, "Times New Roman", Times, serif;
+}
+
+#kea-rest-header > .title,
+.btn {
+  background-color: var(--primary-color);
+}
+#kea-rest-header > .menu {
+  background-color: var(--secondary-color);
+}
+#footer {
+  background-color: var(--secondary-color);
+}

@@ -1,0 +1,39 @@
+@import url("styles.css");
+
+:root {
+  --WSprimary: #872260;
+  --WSsecondary: #e18abc;
+  --WSthird-pink: #b9528e;
+}
+
+#ws-header > .title {
+  background-color: var(--WSprimary);
+}
+
+#ws-header > .menu {
+  background-color: var(--WSsecondary);
+}
+
+#ws-header > .menu > div > div > a {
+  border-bottom: 1px solid var(--WSprimary);
+}
+
+article#ws-macbeth {
+  background-color: var(--WSthird-pink);
+}
+
+#ws-footer {
+  background-color: var(--WSprimary);
+}
+
+@media (min-width: 768px) {
+  #ws-header > .menu > div > div > a:nth-child(odd) {
+    border-right: 1px solid var(--WSprimary);
+  }
+}
+@media (min-width: 1024px) {
+  #ws-header > .menu > div > div > a,
+  #ws-header > .menu > div > div > a:nth-child(odd) {
+    border: unset;
+  }
+}

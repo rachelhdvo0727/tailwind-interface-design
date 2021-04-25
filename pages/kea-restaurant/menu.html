@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css" />
+    <title>Tailwind - KEA Restaurant</title>
+  </head>
+
+  <body>
+    <header id="kea-rest-header">
+      <!-- Menu title-->
+      <div class="title flex items-start flex-shrink-0 text-white">
+        <span class="font-semibold text-xl m-3.5">Restaurant KEA</span>
+      </div>
+      <nav class="menu px-6 md:px-4">
+        <div class="w-full block lg:w-auto">
+          <div class="text-sm md:flex lg:flex-grow">
+            <a
+              href="./home.html"
+              class="block py-2 lg:inline-block lg:mt-0 text-white hover:text-yellow-600 text-center font-bold md:mr-3"
+            >
+              Home
+            </a>
+            <a
+              href="#menu"
+              class="block py-2 text-center font-bold border-t-2 border-b-2 md:border-t-0 md:border-b-0 md:mr-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-600"
+            >
+              Menu
+            </a>
+            <a
+              href="./contact.html"
+              class="block py-2 md:mr-3 lg:inline-block lg:mt-0 text-white hover:text-yellow-600 text-center font-bold"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="menu" class="mt-4 mb-20 mx-4 text-justify space-y-5">
+      <div
+        class="p-6 rounded-xl shadow-xl hover:bg-yellow-100 md:grid md:grid-cols-2 md:gap-x-3"
+      >
+        <img
+          class="w-full rounded-md md:order-2 lg:w-1/2 lg:justify-self-end"
+          src="/assets/salad.jpg"
+          alt="Turing salad"
+        />
+        <div class="dish-text space-y-2">
+          <h2 class="font-bold py-2">Turing Salad</h2>
+          <p>
+            Sun-dried tomatos and feta cheese on top of a thin layer of lettuce.
+            Choose between our balsamic, mustard or barbecue dressing.
+          </p>
+          <div class="btn text-white font-semibold p-2 w-max rounded">
+            65DKK
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-6 rounded-xl shadow-xl hover:bg-yellow-100 md:grid md:grid-cols-2 md:gap-x-3"
+      >
+        <img
+          class="w-full rounded-md md:order-2 lg:w-1/2 lg:justify-self-end"
+          src="/assets/pizza.jpg"
+          alt="Pizza Berners-Lee"
+        />
+        <div class="dish-text space-y-2">
+          <h2 class="font-bold py-2">Pizza Berners-Lee</h2>
+          <p>
+            Tomato, mozzarella, pepperoni and rucula. Choose between our thin or
+            thick bread base.
+          </p>
+          <div class="btn text-white font-semibold p-2 w-max rounded">
+            80DKK
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-6 rounded-xl shadow-xl hover:bg-yellow-100 md:grid md:grid-cols-2 md:gap-x-3"
+      >
+        <img
+          class="w-full rounded-md md:order-2 lg:w-1/2 lg:justify-self-end"
+          src="/assets/burger.jpg"
+          alt="Codd hamburger"
+        />
+        <div class="dish-text space-y-2">
+          <h2 class="font-bold py-2">Codd Hamburger</h2>
+          <p>
+            High quality meat, lettuce, tomato, onion, bacon, cheese, jalapeños
+            and a lot of love. Which sauce do you prefer: BBQ, Dijon or
+            mayonaisse? It comes with French fries and coleslaw salad.
+          </p>
+          <div class="btn text-white font-semibold p-2 w-max rounded">
+            115DKK
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      id="footer"
+      class="static w-full bottom-0 text-center text-white p-2"
+    >
+      <small>&#169; 2021 KEA Web Development</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "tailwind-interface-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachelhdvo0727/tailwind-interface-design.git"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "tailwindcss"
+  ],
+  "author": "rachelvo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachelhdvo0727/tailwind-interface-design/issues"
+  },
+  "homepage": "https://github.com/rachelhdvo0727/tailwind-interface-design#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.12",
+    "tailwindcss": "^2.1.2"
+  }
+}
